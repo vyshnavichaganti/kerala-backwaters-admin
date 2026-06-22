@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #051610; /* Luxury Dark Green Background */
+  --foreground: #fbf9f4; /* Cream Text */
+  --card: #0a241b; /* Secondary forest green card */
+  --card-foreground: #fbf9f4;
+  --border: #123e2f;
+  --gold: #dfa515;
+  --gold-hover: #b0810d;
+  --gold-light: #fbe5ab;
+  --emerald-600: #1b7a54;
+}
+
+.light {
+  --background: #fbf9f4;
+  --foreground: #061912;
+  --card: #ffffff;
+  --card-foreground: #061912;
+  --border: #e7ddc2;
+  --gold: #cfa135;
+  --gold-hover: #b0810d;
+  --gold-light: #fbf0cf;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
+  --color-gold-light: var(--gold-light);
+  --color-emerald-600: var(--emerald-600);
+  
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism dashboard panel */
+.glass-panel {
+  background: rgba(10, 36, 27, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(223, 165, 21, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(231, 221, 194, 0.5);
+}
+
+/* Custom Scrollbar for dashboard tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 36, 27, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-hover);
+}
