@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 const SIDEBAR_ITEMS = [
-  { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { label: "Leads", href: "/leads", icon: Users },
   { label: "Packages", href: "/packages", icon: Ship },
   { label: "Analytics", href: "/analytics", icon: BarChart3 },
@@ -75,7 +75,7 @@ export default function DashboardLayout({
         <div>
           {/* Sidebar Header Logo */}
           <div className="p-6 border-b border-border flex justify-between items-center">
-            <Link href="/" className="flex flex-col text-left">
+            <Link href="/dashboard" className="flex flex-col text-left">
               <span className="font-serif text-lg font-bold tracking-wide text-gold">
                 KERALA CRM
               </span>
